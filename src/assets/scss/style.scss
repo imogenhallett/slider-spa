@@ -1,0 +1,44 @@
+html,body {
+  margin:0;
+  font-size:62.5%;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 3rem;
+  overflow: hidden;
+  background-color: pink;
+}
+ 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing:border-box;
+}
+ 
+#app {
+  margin: 50px 0 0 0;
+  font-size: 1.4rem;
+}
+ 
+.slide {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: white;
+  border: 1px solid red;
+ 
+  .content {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+ 
+.slide.hide-slide {
+  display: none !important; /* must use import because bootstrap uses important - need to overwrite it */
+}
+ 
+.slide.slide-on-top {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  z-index: 999;
+  border: 3px solid blue;
+}
