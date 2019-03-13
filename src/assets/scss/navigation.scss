@@ -1,0 +1,22 @@
+.navbar {
+  height: 50px;
+  padding: 0 0;
+}
+
+.navbar-toggler, .navbar-toggler.collapsed {
+  height: 50px;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+}
+
+button {
+  border: none;
+  outline: none !important;
+}
+
+.navbar-collapse {
+  background-color: red;
+}
