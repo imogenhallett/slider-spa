@@ -1,7 +1,14 @@
+@import "variables";
+
 .navbar {
   height: 50px;
   padding: 0 0;
 }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,93,38, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 .navbar-toggler, .navbar-toggler.collapsed {
   height: 50px;
@@ -18,5 +25,23 @@ button {
 }
 
 .navbar-collapse {
-  background-color: red;
+  background-color: $color-light-1;
 }
+
+.primary-nav {
+  background-color: $color-light-1;
+  color: $txt-standard-1;
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,93,38, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  li {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    // border: 1px solid red;
+  }
+}
+

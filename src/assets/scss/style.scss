@@ -4,7 +4,7 @@ html,body {
   font-family: 'Ubuntu', sans-serif;
   line-height: 3rem;
   overflow: hidden;
-  background-color: pink;
+  background-color: #FFFFFF;
 }
  
 * {
@@ -22,12 +22,21 @@ html,body {
   position: relative;
   width: 100%;
   height: calc(100vh - 50px);
-  background-color: white;
-  border: 1px solid red;
- 
+  animation-duration: 300ms;
+  overflow: hidden;
+  background-size: cover;
+  color: white;
+
   .content {
     width: 100%;
     max-width: 900px;
+  }
+
+  .content.title {
+    h2 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
   }
 }
  
@@ -40,5 +49,21 @@ html,body {
   position: absolute;
   top: 50px;
   z-index: 999;
-  border: 3px solid blue;
 }
+
+.slide-1 {
+  background-image: url('~./assets/images/backgrounds/slide-01.jpg');
+}
+
+.slide-2 {
+  background-color: purple;
+}
+
+.slide-3 {
+  background-color: green;
+}
+
+.slide-4 {
+  background-color: orange;
+}
+
