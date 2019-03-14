@@ -16,16 +16,16 @@
           <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(1)">
             Customer Problem
           </li>
-          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(1)">
+          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(2)">
             Business Problem
           </li>
-          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(1)">
+          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(3)">
             Recommendations
           </li>
-          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(1)">
+          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(4)">
             Data Stratagy
           </li>
-          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(1)">
+          <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(5)">
             Next Steps
           </li>
         </ul>
@@ -40,8 +40,10 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
+import navJumpToMixin from '../../mixins/navJumpTo';
 
 export default {
+  mixins: [navJumpToMixin],
   computed: {
     ...mapGetters([
       'getTotalSlides',
@@ -57,45 +59,6 @@ export default {
       'setCurrentSlide',
       'setNextSlide',
     ]),
-    jumpToSlide(targetSlide) {
-      if (targetSlide === this.getCurrentSlide) {
-        return false;
-      }
-      const PARENTELEM = document.getElementById('slides-wrap');
-      const DIRECTION = (targetSlide > this.getCurrentSlide) ? 'next' : 'prev';
-      const ELEMNAV = document.getElementById('navbarNavDropdown');
-      const ELEMANIMATE = document.getElementById(`slide-${targetSlide}`);
-      let prevSlide = targetSlide;
-      prevSlide -= 1;
-      let nextSlide = targetSlide;
-      nextSlide += 1;
-      ELEMNAV.classList.remove('show');
-      ELEMANIMATE.classList.remove('hide-slide');
-      if (DIRECTION === 'prev') {
-        ELEMANIMATE.classList.add('slide-on-top', 'fadeInDownBig');
-      } else {
-        ELEMANIMATE.classList.add('slide-on-top', 'fadeInUpBig');
-      }
-      setTimeout(() => {
-        PARENTELEM.insertBefore(ELEMANIMATE, PARENTELEM.firstChild);
-        ELEMANIMATE.classList.remove('slide-on-top', 'fadeInUpBig', 'fadeInDownBig');
-        this.setCurrentSlide(targetSlide);
-        if (targetSlide === 1) {
-          // console.log('loop at start');
-          this.setPrevSlide(this.getTotalSlides);
-          this.setNextSlide(2);
-        } else if (targetSlide === this.getTotalSlides) {
-          // console.log('loop at end');
-          this.setNextSlide(1);
-          this.setPrevSlide(prevSlide);
-        } else {
-          // console.log('normal transition no loop');
-          this.setNextSlide(nextSlide);
-          this.setPrevSlide(prevSlide);
-        }
-      }, 300);
-      return true;
-    },
   },
 };
 </script>

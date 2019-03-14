@@ -9,7 +9,6 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,93,38, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
 .navbar-toggler, .navbar-toggler.collapsed {
   height: 50px;
 }
@@ -41,7 +40,31 @@ button {
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
-    // border: 1px solid red;
   }
+}
+
+/***** SECONDARY NAV *****/
+
+.secondary-nav {
+  position: absolute;
+  z-index: 999;
+  top: calc(50% + 25px);
+  right: 0;
+  transform: translateY(-50%);
+  width: 80px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+
+  span {
+    display: block;
+    margin: 20px 0;
+    font-size: 2rem;
+  }
+
+  span.active {
+    font-size: 3rem;
+  }
+
 }
 

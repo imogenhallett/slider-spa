@@ -1,52 +1,53 @@
 <template>
-  <div class="container-fluid">
-    <div id="slides-wrap" class="row">
-      <div id="slide-1"
-        class="d-flex flex-row flex-wrap justify-content-center align-content-center
-          slide animated slide-1"
-      >
-        <div class="content title">
-          <h2 class="text-center">Customer Problem</h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Fusce vel lacus nec risus convallis vestibulum.
-          </p>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Fusce vel lacus nec risus convallis vestibulum.
-          </p>
-          <span class="icon-radio-checked2">
-          </span>
+  <div>
+    <app-secondary-nav></app-secondary-nav>
+    <div class="container-fluid">
+      <div id="slides-wrap" class="row">
+        <div id="slide-1"
+          class="d-flex flex-row flex-wrap justify-content-center align-content-center
+            slide animated slide-1"
+        >
+          <div class="content title">
+            <h2 class="text-center">Customer Problem</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+          </div>
         </div>
-      </div>
-      <div id="slide-2"
-        class="d-flex flex-row flex-wrap justify-content-center align-content-center
-          slide slide hide-slide animated slide-2"
-      >
-        <div class="content">
-          <h2 class="text-center">Title Slide 2</h2>
-          <p class="text-center">Some text</p>
-          <p class="text-center">Some text</p>
+        <div id="slide-2"
+          class="d-flex flex-row flex-wrap justify-content-center align-content-center
+            slide slide hide-slide animated slide-2"
+        >
+          <div class="content">
+            <h2 class="text-center">Title Slide 2</h2>
+            <p class="text-center">Some text</p>
+            <p class="text-center">Some text</p>
+          </div>
         </div>
-      </div>
-      <div id="slide-3"
-        class="d-flex flex-row flex-wrap justify-content-center align-content-center
-          slide hide-slide animated slide-3"
-      >
-        <div class="content">
-          <h2 class="text-center">Title Slide 3</h2>
-          <p class="text-center">Some text</p>
-          <p class="text-center">Some text</p>
+        <div id="slide-3"
+          class="d-flex flex-row flex-wrap justify-content-center align-content-center
+            slide hide-slide animated slide-3"
+        >
+          <div class="content">
+            <h2 class="text-center">Title Slide 3</h2>
+            <p class="text-center">Some text</p>
+            <p class="text-center">Some text</p>
+          </div>
         </div>
-      </div>
-      <div id="slide-4"
-        class="d-flex flex-row flex-wrap justify-content-center align-content-center
-          slide hide-slide animated slide-4"
-      >
-        <div class="content">
-          <h2 class="text-center">Title Slide 4</h2>
-          <p class="text-center">Some text</p>
-          <p class="text-center">Some text</p>
+        <div id="slide-4"
+          class="d-flex flex-row flex-wrap justify-content-center align-content-center
+            slide hide-slide animated slide-4"
+        >
+          <div class="content">
+            <h2 class="text-center">Title Slide 4</h2>
+            <p class="text-center">Some text</p>
+            <p class="text-center">Some text</p>
+          </div>
         </div>
       </div>
     </div>
@@ -57,9 +58,13 @@
 import _ from 'lodash';
 import { mapGetters, mapActions } from 'vuex';
 import { setTimeout } from 'timers';
+import SecondaryNav from './navigation/SecondaryNav.vue';
 
 export default {
   name: 'home',
+  components: {
+    'app-secondary-nav': SecondaryNav,
+  },
   computed: {
     ...mapGetters([
       'getTotalSlides',
