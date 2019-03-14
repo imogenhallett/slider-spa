@@ -23,30 +23,65 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide slide hide-slide animated slide-2"
         >
-          <div class="content">
-            <h2 class="text-center">Title Slide 2</h2>
-            <p class="text-center">Some text</p>
-            <p class="text-center">Some text</p>
+          <div class="content title">
+            <h2 class="text-center">Business Problem</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
           </div>
         </div>
         <div id="slide-3"
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide hide-slide animated slide-3"
         >
-          <div class="content">
-            <h2 class="text-center">Title Slide 3</h2>
-            <p class="text-center">Some text</p>
-            <p class="text-center">Some text</p>
+          <div class="content title">
+            <h2 class="text-center">RECOMMENDATIONS</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
           </div>
         </div>
         <div id="slide-4"
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide hide-slide animated slide-4"
         >
-          <div class="content">
-            <h2 class="text-center">Title Slide 4</h2>
-            <p class="text-center">Some text</p>
-            <p class="text-center">Some text</p>
+          <div class="content title">
+            <h2 class="text-center">Data strategy</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+          </div>
+        </div>
+
+        <div id="slide-5"
+          class="d-flex flex-row flex-wrap justify-content-center align-content-center
+            slide hide-slide animated slide-5"
+        >
+          <div class="content title">
+            <h2 class="text-center">Next Steps</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce vel lacus nec risus convallis vestibulum.
+            </p>
           </div>
         </div>
       </div>

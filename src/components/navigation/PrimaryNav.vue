@@ -23,7 +23,7 @@
             Recommendations
           </li>
           <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(4)">
-            Data Stratagy
+            Data Strategy
           </li>
           <li class="nav-item my-3 my-lg-0 mx-3" @click="jumpToSlide(5)">
             Next Steps
