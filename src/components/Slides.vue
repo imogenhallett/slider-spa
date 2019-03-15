@@ -281,6 +281,7 @@ export default {
   created() {
     window.addEventListener('wheel', this.handleScroll, { passive: true });
     window.addEventListener('wheel', this.throttledMethod, { passive: true });
+    window.addEventListener('ontouchstart' ,this.handleScroll, {passive:true});
   },
   mounted() {
     this.setTotalSlides(document.querySelectorAll('.slide').length);
