@@ -5,6 +5,7 @@ html,body {
   line-height: 3rem;
   overflow: hidden;
   background-color: #FFFFFF;
+  scrollbar-width: none;
 }
  
 * {
@@ -72,7 +73,9 @@ html,body {
 
   .content.info {
     height: 100%;
+    -ms-overflow-style: none;
     overflow-y: scroll;
+    padding: 0 20px;
   }
 
   .content.info::-webkit-scrollbar {
