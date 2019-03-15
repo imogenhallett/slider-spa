@@ -208,9 +208,6 @@ export default {
     ]),
     scrollInit(event) {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
-      // if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight) - 50) {
-      //   this.setFreeScroll(false);
-      // }
       if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
         console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
         return false;
@@ -255,7 +252,7 @@ export default {
         }
         this.detectFreeScroll();
       }, 300);
-      // return true;
+      return true;
     },
     handleScroll: _.debounce(function (event) {
       this.scrollInit(event);
@@ -278,8 +275,8 @@ export default {
       }
     }, 100),
   },
-  heelo() {
-    alert('hello');
+  hello() {
+    console.log('touchmove');
   },
   created() {
     window.addEventListener('wheel', this.handleScroll, { passive: true });
