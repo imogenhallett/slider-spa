@@ -10,12 +10,14 @@ export default new Vuex.Store({
     prevSlide: 0,
     currentSlide: 1,
     nextSlide: 2,
+    freeScroll: false,
   },
   getters: {
     getTotalSlides: state => state.totalSlides,
     getPrevSlide: state => state.prevSlide,
     getCurrentSlide: state => state.currentSlide,
     getNextSlide: state => state.nextSlide,
+    getFreeScroll: state => state.freeScroll,
   },
   mutations: {
     setTotalSlides: (state, payload) => {
@@ -30,6 +32,9 @@ export default new Vuex.Store({
     setNextSlide: (state, payload) => {
       state.nextSlide = payload;
     },
+    setFreeScroll: (state, payload) => {
+      state.freeScroll = payload;
+    },
   },
   actions: {
     setTotalSlides: ({ commit }, payload) => {
@@ -43,6 +48,9 @@ export default new Vuex.Store({
     },
     setNextSlide: ({ commit }, payload) => {
       commit('setNextSlide', payload);
+    },
+    setFreeScroll: ({ commit }, payload) => {
+      commit('setFreeScroll', payload);
     },
   },
 });

@@ -54,25 +54,30 @@ button {
 /***** SECONDARY NAV *****/
 
 .secondary-nav {
-  position: absolute;
-  z-index: 999;
-  top: calc(50% + 25px);
-  right: 0;
-  transform: translateY(-50%);
-  width: 80px;
-  color: #FFFFFF;
-  text-align: center;
-  cursor: pointer;
-
-  span {
-    display: block;
-    margin: 20px 0;
-    font-size: 2rem;
-  }
-
-  span.active {
-    font-size: 3rem;
-  }
-
+  display: none;
 }
 
+@media screen and (min-width:768px) {
+  .secondary-nav {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    top: calc(50% + 25px);
+    right: 0;
+    transform: translateY(-50%);
+    width: 80px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+  
+    span {
+      display: block;
+      margin: 20px 0;
+      font-size: 2rem;
+    }
+  
+    span.active {
+      font-size: 3rem;
+    }
+  }
+  }
