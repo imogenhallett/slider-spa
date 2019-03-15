@@ -9,11 +9,11 @@
         >
           <div class="content title">
             <h2 class="text-center">Customer Problem</h2>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
@@ -23,16 +23,105 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide slide hide-slide animated slide-2"
         >
-          <div class="content title">
+          <div class="content info">
             <h2 class="text-center">Business Problem</h2>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+              Etiam tristique efficitur ex ac varius.
+              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
+              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
+              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
+              Cras ut ligula et quam venenatis tristique eu non massa.
+              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
+              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
+              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
             </p>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+              Etiam tristique efficitur ex ac varius.
+              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
+              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
+              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
+              Cras ut ligula et quam venenatis tristique eu non massa.
+              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
+              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
+              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
             </p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+              Etiam tristique efficitur ex ac varius.
+              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
+              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
+              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
+              Cras ut ligula et quam venenatis tristique eu non massa.
+              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
+              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
+              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
+            </p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+              Etiam tristique efficitur ex ac varius.
+              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
+              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
+              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
+              Cras ut ligula et quam venenatis tristique eu non massa.
+              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
+              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
+              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
+            </p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+              Etiam tristique efficitur ex ac varius.
+              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
+              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
+              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
+              Cras ut ligula et quam venenatis tristique eu non massa.
+              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
+              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
+              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
+            </p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+              Etiam tristique efficitur ex ac varius.
+              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
+              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
+              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
+              Cras ut ligula et quam venenatis tristique eu non massa.
+              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
+              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
+              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
+            </p>
+            <p>THE END</p>
           </div>
         </div>
         <div id="slide-3"
@@ -41,11 +130,11 @@
         >
           <div class="content title">
             <h2 class="text-center">RECOMMENDATIONS</h2>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
@@ -57,11 +146,11 @@
         >
           <div class="content title">
             <h2 class="text-center">Data strategy</h2>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
@@ -74,11 +163,11 @@
         >
           <div class="content title">
             <h2 class="text-center">Next Steps</h2>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
-            <p class="text-center">
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Fusce vel lacus nec risus convallis vestibulum.
             </p>
@@ -106,6 +195,7 @@ export default {
       'getPrevSlide',
       'getCurrentSlide',
       'getNextSlide',
+      'getFreeScroll',
     ]),
   },
   methods: {
@@ -114,8 +204,17 @@ export default {
       'setPrevSlide',
       'setCurrentSlide',
       'setNextSlide',
+      'setFreeScroll',
     ]),
     scrollInit(event) {
+      const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
+      if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight) - 50) {
+        this.setFreeScroll(false);
+      }
+      if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
+        console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
+        return false;
+      }
       const PARENTELEM = document.getElementById('slides-wrap');
       let elemAnimate = document.getElementById(`slide-${this.getNextSlide}`);
       let direction = 'next';
@@ -154,11 +253,19 @@ export default {
             this.setPrevSlide(this.getTotalSlides);
           }
         }
+        this.detectFreeScroll();
       }, 300);
     },
     handleScroll: _.debounce(function () {
       this.scrollInit(event);
     }, 500, { leading: true, trailing: false }),
+    detectFreeScroll() {
+      const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
+      console.log('DETECT SCROLL: ', ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight);
+      if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight) {
+        this.setFreeScroll(true);
+      }
+    },
   },
   created() {
     window.addEventListener('wheel', this.handleScroll, { passive: true });

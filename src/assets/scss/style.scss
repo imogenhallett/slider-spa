@@ -52,13 +52,14 @@ html,body {
   position: relative;
   width: 100%;
   height: calc(100vh - 50px);
+  padding: 20px 0;
   animation-duration: 300ms;
   overflow: hidden;
   background-size: cover;
   color: white;
 
   .content {
-    width: 100%;
+    width: calc(100% - 80px);
     max-width: 900px;
   }
 
@@ -67,6 +68,11 @@ html,body {
       font-size: 3.5rem;
       text-transform: uppercase;
     }
+  }
+
+  .content.info {
+    height: 100%;
+    overflow-y: scroll;
   }
 }
  
@@ -101,3 +107,10 @@ html,body {
   background-color: black;
 }
 
+@media screen and (min-width:768px) {
+  .slide {
+    .content {
+      width: calc(100% - 160px);
+    }
+  }
+}
