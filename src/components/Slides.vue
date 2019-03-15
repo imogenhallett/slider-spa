@@ -278,10 +278,13 @@ export default {
       }
     }, 100),
   },
+  heelo() {
+    alert('hello');
+  },
   created() {
     window.addEventListener('wheel', this.handleScroll, { passive: true });
     window.addEventListener('wheel', this.throttledMethod, { passive: true });
-    window.addEventListener('ontouchstart' ,this.handleScroll, {passive:true});
+    document.querySelector('#slides-wrap').addEventListener('touchmove', this.hello());
   },
   mounted() {
     this.setTotalSlides(document.querySelectorAll('.slide').length);
