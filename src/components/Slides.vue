@@ -5,9 +5,9 @@
       <div id="slides-wrap" class="row">
         <div id="slide-1"
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
-            slide animated slide-1"
+            slide slide animated slide-1"
         >
-          <div class="content title">
+          <div class="align-self-center content title">
             <h2 class="text-center">Customer Problem</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -23,7 +23,7 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide slide hide-slide animated slide-2"
         >
-          <div class="content info">
+          <div class="align-self-center content info">
             <h2 class="text-center">Business Problem</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -128,7 +128,7 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide hide-slide animated slide-3"
         >
-          <div class="content title">
+          <div class="align-self-center content title">
             <h2 class="text-center">RECOMMENDATIONS</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -144,7 +144,7 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide hide-slide animated slide-4"
         >
-          <div class="content title">
+          <div class="align-self-center content title">
             <h2 class="text-center">Data strategy</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -161,7 +161,7 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide hide-slide animated slide-5"
         >
-          <div class="content title">
+          <div class="align-self-center content title">
             <h2 class="text-center">Next Steps</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -255,8 +255,9 @@ export default {
         }
         this.detectFreeScroll();
       }, 300);
+      return true;
     },
-    handleScroll: _.debounce(function () {
+    handleScroll: _.debounce(function (event) {
       this.scrollInit(event);
     }, 500, { leading: true, trailing: false }),
     detectFreeScroll() {
