@@ -74,6 +74,10 @@ html,body {
     height: 100%;
     overflow-y: scroll;
   }
+
+  .content.info::-webkit-scrollbar {
+    display: none;
+   }
 }
  
 .slide.hide-slide {
