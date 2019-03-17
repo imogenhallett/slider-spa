@@ -5,7 +5,7 @@
       <div id="slides-wrap" class="row">
         <div id="slide-1"
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
-            slide slide animated slide-1"
+            slide animated slide-1"
         >
           <div class="align-self-center content title">
             <h2 class="text-center">Customer Problem</h2>
@@ -21,7 +21,7 @@
         </div>
         <div id="slide-2"
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
-            slide slide hide-slide animated slide-2"
+            slide hide-slide animated slide-2"
         >
           <div class="align-self-center content info">
             <h2 class="text-center">Business Problem</h2>
@@ -189,6 +189,13 @@ export default {
   components: {
     'app-secondary-nav': SecondaryNav,
   },
+  data() {
+    return {
+      touchStartPos: 0,
+      touchEndPos: 0,
+      swipeDirection: undefined,
+    };
+  },
   computed: {
     ...mapGetters([
       'getTotalSlides',
@@ -208,25 +215,23 @@ export default {
     ]),
     scrollInit(event) {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
-      // if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight) - 50) {
-      //   this.setFreeScroll(false);
-      // }
       if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
         console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
         return false;
       }
       const PARENTELEM = document.getElementById('slides-wrap');
+      const ELEMTOHIDE = document.getElementById(`slide-${this.getCurrentSlide}`);
       let elemAnimate = document.getElementById(`slide-${this.getNextSlide}`);
       let direction = 'next';
       let prevSlide = this.getPrevSlide;
       let nextSlide = this.getNextSlide;
-      if (event.deltaY < 0) {
+      if (event.deltaY < 0 || this.swipeDirection === 'prev') {
         // console.log('scrolling up');
         elemAnimate = document.getElementById(`slide-${this.getPrevSlide}`);
         direction = 'prev';
         elemAnimate.classList.remove('hide-slide');
         elemAnimate.classList.add('slide-on-top', 'fadeInDownBig');
-      } else {
+      } else if (event.deltaY > 0 || this.swipeDirection === 'next') {
         // console.log('scrolling down');
         elemAnimate = document.getElementById(`slide-${this.getNextSlide}`);
         direction = 'next';
@@ -236,6 +241,7 @@ export default {
       setTimeout(() => {
         PARENTELEM.insertBefore(elemAnimate, PARENTELEM.firstChild);
         elemAnimate.classList.remove('slide-on-top', 'fadeInUpBig', 'fadeInDownBig');
+        ELEMTOHIDE.classList.add('hide-slide');
         if (direction === 'next') {
           nextSlide += 1;
           this.setPrevSlide(this.getCurrentSlide);
@@ -255,7 +261,7 @@ export default {
         }
         this.detectFreeScroll();
       }, 300);
-      // return true;
+      return true;
     },
     handleScroll: _.debounce(function (event) {
       this.scrollInit(event);
@@ -272,15 +278,32 @@ export default {
       if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight)) {
         this.setFreeScroll(false);
         this.scrollInit(event);
-        console.log('took action');
+        console.log('throttleMethod took action');
       } else {
-        console.log('no action');
+        console.log('throttleMethod no action');
       }
     }, 100),
+    handleSwipeStart: _.debounce(function (event) {
+      // console.log('touch start show just once', event.pageY);
+      this.touchStartPos = event.pageY;
+    }, 300, { leading: true, trailing: false }),
+    handleSwipeEnd: _.debounce(function (event) {
+      // console.log('touch end show just once', event.pageY);
+      this.touchEndPos = event.pageY;
+      this.swipeDirection = 'next';
+      if (this.touchEndPos > this.touchStartPos) {
+        this.swipeDirection = 'prev';
+      }
+      console.log(this.swipeDirection);
+      this.scrollInit(event);
+    }, 300, { leading: true, trailing: false }),
   },
   created() {
     window.addEventListener('wheel', this.handleScroll, { passive: true });
     window.addEventListener('wheel', this.throttledMethod, { passive: true });
+    document.addEventListener('touchstart', this.handleSwipeStart);
+    document.addEventListener('touchend', this.handleSwipeEnd);
+    document.addEventListener('touchend', this.throttledMethod);
   },
   mounted() {
     this.setTotalSlides(document.querySelectorAll('.slide').length);
