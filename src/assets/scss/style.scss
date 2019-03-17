@@ -1,3 +1,5 @@
+@import "variables";
+
 html,body {
   margin:0;
   font-size:62.5%;
@@ -63,20 +65,28 @@ html,body {
   .content {
     width: calc(100% - 30px); /* therefore get 15px of left/right margin */
     max-width: 900px;
-  }
-
-  .content.title {
+    
     h2 {
+      font-family: 'Dosis', sans-serif;
       font-size: 2.5rem;
+      letter-spacing: 2px;
+      margin: 2rem 0;
       text-transform: uppercase;
     }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+
   }
 
   .content.info {
     max-height: 100%;
     -ms-overflow-style: none;
     overflow-y: scroll;
-    padding: 20px 0;
+    padding: 20px 0 50px 0;
   }
 
   .content.info::-webkit-scrollbar {
@@ -100,11 +110,11 @@ html,body {
 }
 
 .slide-2 {
-  background-color: purple;
+  background-color: $bg-slide-2;
 }
 
 .slide-3 {
-  background-color: green;
+  background-color: $bg-slide-3;
 }
 
 .slide-4 {
@@ -122,7 +132,7 @@ html,body {
       padding: 0 20px;
     }
     .content.info {
-      padding: 20px;
+      padding: 20px 20px 50px 20px;
     }
   }
 }

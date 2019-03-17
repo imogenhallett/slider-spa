@@ -1,0 +1,26 @@
+.recommendation {
+  width: calc(50% - 30px);
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+
+  img {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+.recommendation.left {
+  margin: 10px 10px 20px 20px;
+}
+
+.recommendation.right {
+  margin: 10px 20px 20px 10px;
+}

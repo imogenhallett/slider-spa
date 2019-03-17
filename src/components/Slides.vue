@@ -64,8 +64,28 @@
           class="d-flex flex-row flex-wrap justify-content-center align-content-center
             slide hide-slide animated slide-3"
         >
-          <div class="align-self-center content title">
+          <div class="align-self-center content info">
             <h2 class="text-center">RECOMMENDATIONS</h2>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
+            </p>
+            <div class="row">
+              <div class="d-flex flex-row flex-wrap justify-content-center align-content-center">
+                <div class="recommendation left">
+                  <img src="../assets/images/slides/recommendations-01.jpg" />
+                  <p>Recommendation 1</p>
+                </div>
+                <div class="recommendation right">
+                  <img src="../assets/images/slides/recommendations-02.jpg" />
+                  <p>Recommendation 2</p>
+                </div>
+              </div>
+            </div>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
@@ -246,3 +266,7 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import "../assets/scss/recommendations.scss";
+</style>
