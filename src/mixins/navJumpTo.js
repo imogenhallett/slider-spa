@@ -8,6 +8,7 @@ const navJumpToMixin = {
       const DIRECTION = (targetSlide > this.getCurrentSlide) ? 'next' : 'prev';
       const ELEMNAV = document.getElementById('navbarNavDropdown');
       const ELEMANIMATE = document.getElementById(`slide-${targetSlide}`);
+      const ELEMTOHIDE = document.getElementById(`slide-${this.getCurrentSlide}`);
       let prevSlide = targetSlide;
       prevSlide -= 1;
       let nextSlide = targetSlide;
@@ -21,6 +22,7 @@ const navJumpToMixin = {
       }
       setTimeout(() => {
         PARENTELEM.insertBefore(ELEMANIMATE, PARENTELEM.firstChild);
+        ELEMTOHIDE.classList.add('hide-slide');
         ELEMANIMATE.classList.remove('slide-on-top', 'fadeInUpBig', 'fadeInDownBig');
         this.setCurrentSlide(targetSlide);
         if (targetSlide === 1) {
