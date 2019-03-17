@@ -12,7 +12,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-lg-auto">
           <li class="nav-item my-3 my-lg-0 mx-3"
             @click="jumpToSlide(1)"
             v-bind:class="{'active':(1 === getCurrentSlide)}"
