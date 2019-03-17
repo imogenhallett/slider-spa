@@ -61,13 +61,13 @@ html,body {
   color: white;
 
   .content {
-    width: calc(100% - 80px);
+    width: calc(100% - 30px); /* therefore get 15px of left/right margin */
     max-width: 900px;
   }
 
   .content.title {
     h2 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       text-transform: uppercase;
     }
   }
@@ -76,7 +76,7 @@ html,body {
     height: 100%;
     -ms-overflow-style: none;
     overflow-y: scroll;
-    padding: 20px 20px 100px 20px;
+    padding: 20px 0 100px 0;
   }
 
   .content.info::-webkit-scrollbar {
@@ -115,6 +115,14 @@ html,body {
   background-color: black;
 }
 
+@media screen and (min-width:375px) {
+  .slide {
+    .content {
+      width: calc(100% - 60px); /* therefore get 30px of left/right margin 60px is 2*the width of the secondary Nav*/
+      padding: 0 20px;
+    }
+  }
+}
 @media screen and (min-width:768px) {
   .slide {
     .content {
