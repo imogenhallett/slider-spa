@@ -215,8 +215,8 @@ export default {
     ]),
     scrollInit(event) {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
-      if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
-        console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
+      if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll && (event.deltaY > 0 || this.swipeDirection === 'next')) {
+        // console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
         return false;
       }
       const PARENTELEM = document.getElementById('slides-wrap');
@@ -268,7 +268,7 @@ export default {
     }, 300, { leading: true, trailing: false }),
     detectFreeScroll() {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
-      console.log('DETECT SCROLL: ', ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight);
+      // console.log('DETECT SCROLL: ', ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight);
       if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight) {
         this.setFreeScroll(true);
       }
@@ -277,32 +277,31 @@ export default {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
       if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight)) {
         this.setFreeScroll(false);
-        this.scrollInit(event);
-        console.log('throttleMethod took action');
+        // this.scrollInit(event);
+        // console.log('throttleMethod took action');
       } else {
-        console.log('throttleMethod no action');
+        // console.log('throttleMethod no action');
       }
     }, 100),
     handleSwipeStart: _.debounce(function (event) {
-      // console.log('touch start show just once', event.pageY);
-      this.touchStartPos = event.pageY;
+      // console.log('touch start show just once', event.touches[0].screenY);
+      this.touchStartPos = event.touches[0].screenY;
     }, 300, { leading: true, trailing: false }),
     handleSwipeEnd: _.debounce(function (event) {
-      // console.log('touch end show just once', event.pageY);
-      this.touchEndPos = event.pageY;
+      // console.log('touch end show just once SCREEN END', event.touches[0].screenY);
+      this.touchEndPos = event.touches[0].screenY;
       this.swipeDirection = 'next';
       if (this.touchEndPos > this.touchStartPos) {
         this.swipeDirection = 'prev';
       }
-      console.log(this.swipeDirection);
       this.scrollInit(event);
-    }, 300, { leading: true, trailing: false }),
+    }, 300, { leading: false, trailing: true }),
   },
   created() {
     window.addEventListener('wheel', this.handleScroll, { passive: true });
     window.addEventListener('wheel', this.throttledMethod, { passive: true });
     document.addEventListener('touchstart', this.handleSwipeStart);
-    document.addEventListener('touchend', this.handleSwipeEnd);
+    document.addEventListener('touchmove', this.handleSwipeEnd);
     document.addEventListener('touchend', this.throttledMethod);
   },
   mounted() {
