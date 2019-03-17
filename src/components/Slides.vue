@@ -214,6 +214,7 @@ export default {
       'setFreeScroll',
     ]),
     scrollInit(event) {
+      console.log(this.getPrevSlide, this.getCurrentSlide, this.getNextSlide);
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
       if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
         console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
@@ -243,6 +244,7 @@ export default {
         elemAnimate.classList.remove('slide-on-top', 'fadeInUpBig', 'fadeInDownBig');
         ELEMTOHIDE.classList.add('hide-slide');
         if (direction === 'next') {
+          console.log('slides are getting set in here');
           nextSlide += 1;
           this.setPrevSlide(this.getCurrentSlide);
           this.setCurrentSlide(this.getNextSlide);
@@ -268,7 +270,7 @@ export default {
     }, 300, { leading: true, trailing: false }),
     detectFreeScroll() {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
-      console.log('DETECT SCROLL: ', ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight);
+      // console.log('DETECT SCROLL: ', ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight);
       if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight) {
         this.setFreeScroll(true);
       }
@@ -277,7 +279,7 @@ export default {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
       if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight)) {
         this.setFreeScroll(false);
-        this.scrollInit(event);
+        // this.scrollInit(event);
         console.log('throttleMethod took action');
       } else {
         console.log('throttleMethod no action');
