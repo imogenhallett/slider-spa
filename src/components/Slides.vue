@@ -11,11 +11,11 @@
             <h2 class="text-center">Customer Problem</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
             </p>
           </div>
         </div>
@@ -25,70 +25,6 @@
         >
           <div class="align-self-center content info">
             <h2 class="text-center">Business Problem</h2>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
-              Proin in enim pretium, convallis purus ut, ultrices lorem.
-              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
-              Quisque eget sollicitudin arcu, et elementum dolor.
-              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
-              Etiam tristique efficitur ex ac varius.
-              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
-              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
-              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
-              Cras ut ligula et quam venenatis tristique eu non massa.
-              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
-              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
-              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
-              Proin in enim pretium, convallis purus ut, ultrices lorem.
-              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
-              Quisque eget sollicitudin arcu, et elementum dolor.
-              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
-              Etiam tristique efficitur ex ac varius.
-              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
-              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
-              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
-              Cras ut ligula et quam venenatis tristique eu non massa.
-              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
-              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
-              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
-              Proin in enim pretium, convallis purus ut, ultrices lorem.
-              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
-              Quisque eget sollicitudin arcu, et elementum dolor.
-              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
-              Etiam tristique efficitur ex ac varius.
-              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
-              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
-              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
-              Cras ut ligula et quam venenatis tristique eu non massa.
-              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
-              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
-              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
-              Proin in enim pretium, convallis purus ut, ultrices lorem.
-              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
-              Quisque eget sollicitudin arcu, et elementum dolor.
-              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
-              Etiam tristique efficitur ex ac varius.
-              Nulla iaculis neque eget interdum pretium. Duis porttitor in elit sit amet bibendum.
-              Fusce euismod arcu sed elit molestie, id cursus lacus sagittis.
-              Donec tortor lorem, aliquet ut leo vulputate, vulputate commodo justo.
-              Cras ut ligula et quam venenatis tristique eu non massa.
-              Suspendisse at lectus ut felis mollis mattis quis vitae ex.
-              Sed sed purus id dolor eleifend consectetur. Aliquam erat volutpat.
-              Vestibulum accumsan orci dolor, id bibendum orci congue eu.
-            </p>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
@@ -132,11 +68,11 @@
             <h2 class="text-center">RECOMMENDATIONS</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
             </p>
           </div>
         </div>
@@ -148,11 +84,11 @@
             <h2 class="text-center">Data strategy</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
             </p>
           </div>
         </div>
@@ -165,11 +101,11 @@
             <h2 class="text-center">Next Steps</h2>
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
-            </p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Fusce vel lacus nec risus convallis vestibulum.
+              Integer nisl arcu, tincidunt at finibus et, hendrerit eget arcu.
+              Proin in enim pretium, convallis purus ut, ultrices lorem.
+              Mauris dolor purus, porttitor in lorem nec, malesuada ornare massa.
+              Quisque eget sollicitudin arcu, et elementum dolor.
+              Nunc ut metus arcu. Nunc tempus pellentesque efficitur.
             </p>
           </div>
         </div>
