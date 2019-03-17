@@ -189,6 +189,13 @@ export default {
   components: {
     'app-secondary-nav': SecondaryNav,
   },
+  data() {
+    return {
+      touchStartPos: 0,
+      touchEndPos: 0,
+      swipeDirection: undefined,
+    };
+  },
   computed: {
     ...mapGetters([
       'getTotalSlides',
@@ -207,7 +214,6 @@ export default {
       'setFreeScroll',
     ]),
     scrollInit(event) {
-      console.log(event);
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
       if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
         console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
@@ -218,13 +224,13 @@ export default {
       let direction = 'next';
       let prevSlide = this.getPrevSlide;
       let nextSlide = this.getNextSlide;
-      if (event.deltaY < 0) {
+      if (event.deltaY < 0 || this.swipeDirection === 'prev') {
         // console.log('scrolling up');
         elemAnimate = document.getElementById(`slide-${this.getPrevSlide}`);
         direction = 'prev';
         elemAnimate.classList.remove('hide-slide');
         elemAnimate.classList.add('slide-on-top', 'fadeInDownBig');
-      } else {
+      } else if (event.deltaY > 0 || this.swipeDirection === 'next') {
         // console.log('scrolling down');
         elemAnimate = document.getElementById(`slide-${this.getNextSlide}`);
         direction = 'next';
@@ -265,9 +271,6 @@ export default {
         this.setFreeScroll(true);
       }
     },
-    hello() {
-      console.log('touchmove');
-    },
     throttledMethod: _.throttle(function (event) {
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
       if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight)) {
@@ -278,11 +281,26 @@ export default {
         console.log('no action');
       }
     }, 100),
+    handleSwipeStart: _.debounce(function (event) {
+      // console.log('touch start show just once', event.pageY);
+      this.touchStartPos = event.pageY;
+    }, 300, { leading: true, trailing: false }),
+    handleSwipeEnd: _.debounce(function (event) {
+      // console.log('touch end show just once', event.pageY);
+      this.touchEndPos = event.pageY;
+      this.swipeDirection = 'next';
+      if (this.touchEndPos > this.touchStartPos) {
+        this.swipeDirection = 'prev';
+      }
+      console.log(this.swipeDirection);
+      this.scrollInit(event);
+    }, 300, { leading: true, trailing: false }),
   },
   created() {
-    window.addEventListener('wheel', this.handleScroll, { passive: true });
-    window.addEventListener('wheel', this.throttledMethod, { passive: true });
-    window.addEventListener('touchend', this.scrollInit);
+    // window.addEventListener('wheel', this.handleScroll, { passive: true });
+    // window.addEventListener('wheel', this.throttledMethod, { passive: true });
+    document.addEventListener('touchstart', this.handleSwipeStart);
+    document.addEventListener('touchend', this.handleSwipeEnd);
   },
   mounted() {
     this.setTotalSlides(document.querySelectorAll('.slide').length);
