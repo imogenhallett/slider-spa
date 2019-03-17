@@ -214,10 +214,9 @@ export default {
       'setFreeScroll',
     ]),
     scrollInit(event) {
-      console.log(this.getPrevSlide, this.getCurrentSlide, this.getNextSlide);
       const ELEMTOCHECK = document.querySelector(`#slide-${this.getCurrentSlide} .content`);
-      if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll) {
-        console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
+      if (ELEMTOCHECK.scrollHeight > ELEMTOCHECK.clientHeight && this.getFreeScroll && (event.deltaY > 0 || this.swipeDirection === 'next')) {
+        // console.log('EXIT BECAUSE CUURENT SLIDE IS FREE SCROLL');
         return false;
       }
       const PARENTELEM = document.getElementById('slides-wrap');
@@ -244,7 +243,6 @@ export default {
         elemAnimate.classList.remove('slide-on-top', 'fadeInUpBig', 'fadeInDownBig');
         ELEMTOHIDE.classList.add('hide-slide');
         if (direction === 'next') {
-          console.log('slides are getting set in here');
           nextSlide += 1;
           this.setPrevSlide(this.getCurrentSlide);
           this.setCurrentSlide(this.getNextSlide);
@@ -280,23 +278,22 @@ export default {
       if (this.getFreeScroll && ELEMTOCHECK.scrollTop >= (ELEMTOCHECK.scrollHeight - ELEMTOCHECK.offsetHeight)) {
         this.setFreeScroll(false);
         // this.scrollInit(event);
-        console.log('throttleMethod took action');
+        // console.log('throttleMethod took action');
       } else {
-        console.log('throttleMethod no action');
+        // console.log('throttleMethod no action');
       }
     }, 100),
     handleSwipeStart: _.debounce(function (event) {
-      console.log('touch start show just once', event.touches[0].screenY);
+      // console.log('touch start show just once', event.touches[0].screenY);
       this.touchStartPos = event.touches[0].screenY;
     }, 300, { leading: true, trailing: false }),
     handleSwipeEnd: _.debounce(function (event) {
-      console.log('touch end show just once SCREEN END', event.touches[0].screenY);
+      // console.log('touch end show just once SCREEN END', event.touches[0].screenY);
       this.touchEndPos = event.touches[0].screenY;
       this.swipeDirection = 'next';
       if (this.touchEndPos > this.touchStartPos) {
         this.swipeDirection = 'prev';
       }
-      console.log(this.swipeDirection);
       this.scrollInit(event);
     }, 300, { leading: false, trailing: true }),
   },
