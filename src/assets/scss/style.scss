@@ -121,6 +121,9 @@ html,body {
       width: calc(100% - 60px); /* therefore get 30px of left/right margin 60px is 2*the width of the secondary Nav*/
       padding: 0 20px;
     }
+    .content.info {
+      padding: 20px 20px 100px 20px;
+    }
   }
 }
 @media screen and (min-width:768px) {
