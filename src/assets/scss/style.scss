@@ -60,6 +60,7 @@ html,body {
   animation-duration: 300ms;
   overflow: hidden;
   background-size: cover;
+  background-position: center;
   color: white;
 
   .content {
@@ -118,7 +119,7 @@ html,body {
 }
 
 .slide-4 {
-  background-color: orange;
+  background-image: url('~./assets/images/backgrounds/slide-04.jpg');
 }
 
 .slide-5 {
